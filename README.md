@@ -46,13 +46,13 @@ File -> Read molecule -> select 1J1B.pdbqt
 
 Then do the following steps:
 
-Add polar hydrogen: Edit -> Hydrogen -> Add -> Polar only
+<h5> Add polar hydrogen: </h5> Edit -> Hydrogen -> Add -> Polar only
 
-Add charges: Edit -> Charges -> Add Kollman Charges
+<h5> Add charges: </h5> Edit -> Charges -> Add Kollman Charges
 
-Add non-polar hydrogens: Edit -> Hydrogen -> Add -> Merge Non-Polar
+<h5> Add non-polar hydrogens: </h5> Edit -> Hydrogen -> Add -> Merge Non-Polar
 
-Select area for docking: Grid -> Grid Box
+<h5> Select area for docking: </h5> Grid -> Grid Box
 
 Set spacing according to your need
 
@@ -115,9 +115,9 @@ After successful completion of pyVSvina tool you will get follwing files and fol
 
 You can use the docking conformation pdbqt file to make the 1J1B-ligand complex using any software such as Autodock Tools, Chimera and PyMol etc.
 
-                             If you are facing any error. Please feel free to write at shuklarohit815@gmail.com
+           If you are facing any error. Please feel free to write at shuklarohit815@gmail.com
 
-                                                 <h4> Happy screening 😊 </h4>
+                                <h4> Happy screening 😊 </h4>
 
 I want to thanks Dr. [Tiratha Raj Singh](http://www.bioinfoindia.org/raj/) and Dr. [Narendra Kumar](https://narekum.github.io/) for the suggetions and encouragement in making of this tool.
 
