@@ -3,21 +3,21 @@
  # Installation
  Download the contents of repository and add it to your $PATH variable or simply use the pyVSvina script with the python3.
 
-$ export PATH=":$PATH"
+    $ export PATH=":$PATH"
 
 You can add above line to your .bashrc file.
 
 # Usage:
 
-<h3> If path is added in the system so please run this command. </h3>
+<h3> if path is added in the system so please run this command: </h3>
 
-$ pyVSvina.py --help
+    $ pyVSvina.py --help
 
-<h3> Else run this command. </h3>
+<h3> else run this command: </h3>
 
-python3 pyVSvina.py --help
+    $ python3 pyVSvina.py --help
 
-![Usage](pySDF2pdbqt_usage.png)
+![Usage](pyVSvina_usage.png)
 
 # What you need
 1. [pyVSvina](https://github.com/shuklarohit815/pyVSvina) for virtual screening.
@@ -38,7 +38,7 @@ Copy the GSK3B pdb file (1J1B.pdb) to the current working directory.
 
 Open GSK3B (PDBID: 1J1B) with autodock tools using command line.
 
-$ adt 1J1B.pdb
+    $ adt 1J1B.pdb
 
 You can also open the 1J1B.pdb using the Autodock GUI import wizard.
 
@@ -66,33 +66,42 @@ The chosen values define an area where ligands would be docked. The area outside
 
 ![grid](grid.png)
 
-Save the chosen values in conf.txt file
+<h3> Save the chosen values in conf.txt file </h3>
 
+#
 center_x = 40.00
+
 center_y = 40.00
+
 center_z = 40.00
 
 size_x = 20.298
+
 size_y = 14.019
+
 size_z = -10.123
 
 energy_range = 4
-exhaustiveness = 8
 
+exhaustiveness = 8
+#
 
 Delete the ANP molecule before saving the 1J1B.pdbqt
 
-select the ANP from the right side panel in the Autodock Tools.
+Select the ANP from the right side panel in the Autodock Tools.
 
-Edit -> Delete -> Delete selected molecules
+Edit -> Delete -> Delete selected molecules.
 
 Save the molecule in a pdbqt file: Grid -> Macromolecules -> Choose -> 1J1B -> save 1J1B.pdbqt
+
+<h3> Please refer this Youtube video tutorial to learn more about Autodock Tools </h3>.
+[Molecular docking using Autodock with Result analysis](https://www.youtube.com/watch?v=6IEaRqRGrss&t=4476s)
 
 # Virtual Screening with pyVSvina
 
 pyVSvina will use Autodock Vina to dock one ligand at a time from the ligand library to chosen area in GSK3B.
 
-Run the following command
+Run the following command:
 
 $ python3 pyVSvina.py -r 1J1B.pdbqt -c conf.txt -l DRUGBANK_pdbqt_ligands/
 
@@ -105,7 +114,7 @@ After successful completion of pyVSvina tool you will get follwing files and fol
 
 You can use the docking conformation pdbqt file to make the 1J1B-ligand complex using any software such as Autodock Tools, Chimera and PyMol etc.
 
-If you are facing any error. Please feel free to write at shuklarohit815@gmail.com
+                              If you are facing any error. Please feel free to write at shuklarohit815@gmail.com
 
 <h4> Happy screening 😊 </h4>
 
